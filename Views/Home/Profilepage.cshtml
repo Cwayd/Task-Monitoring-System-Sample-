@@ -1,0 +1,64 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@{
+    ViewData["Title"] = "Profile Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css"> <!-- Reference to the external CSS file -->
+</head>
+<body>
+    <div class="profile-container">
+        <button class="home-button">Home</button>
+        <button class="logout-button">Logout</button>
+        <h1 class="profile-title">Profile</h1>
+        <div class="profile-picture"></div>
+        <p class="profile-name">Arnold Schwarzenegger</p>
+        <p class="profile-username">@@userAS1</p>
+        <form class="profile-form">
+            <div class="form-group">
+                <label class="form-label" for="username">Username</label>
+                <div class="input-group">
+                    <input class="input-field" id="username" type="text" />
+                    <button class="edit-button">Edit</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <div class="input-group">
+                    <input class="input-field" id="name" type="text" />
+                    <button class="edit-button">Edit</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="address">Address</label>
+                <div class="input-group">
+                    <input class="input-field" id="address" type="text" />
+                    <button class="edit-button">Edit</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="birthday">Birthday</label>
+                <div class="input-group">
+                    <input class="input-field" id="birthday" type="date" />
+                    <button class="edit-button">Edit</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <div class="input-group">
+                    <input class="input-field" id="password" type="password" />
+                    <button class="edit-button">Edit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

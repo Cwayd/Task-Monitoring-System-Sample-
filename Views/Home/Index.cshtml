@@ -6,7 +6,7 @@
 
 <div class="login-container">
     <div class="login-form">
-        <h2>Login Mo Diria Mga Chuy</h2>
+        <h2>Login Mo Diria Mga Chuy</h2> <!-- This heading color will be white -->
         <form asp-action="Login" method="post">
             <div class="form-group">
                 <label asp-for="Username" class="form-label">Username</label>
@@ -22,7 +22,8 @@
                 <a href="/Account/ForgotPassword" class="forgot-password">Forgot Password?</a>
             </div>
             <button type="submit" class="btn btn-primary btn-login">Login</button>
-            <a href="/Home/Homepage" class="btn btn-secondary btn-home">Go to Home</a> <!-- New button -->
+            <a href="/Home/Homepage" class="btn btn-secondary btn-home">Go to Dashboard</a> <!-- Go to Dashboard button -->
+            <a href="/Home/Profilepage" class="btn btn-secondary btn-profile">Go to Profile Page</a> <!-- Go to Profile Page button -->
         </form>
     </div>
 </div>

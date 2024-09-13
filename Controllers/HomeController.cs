@@ -34,5 +34,10 @@ namespace TaskMonitoring.Controllers
         {
             return View(); // This will return the Homepage view
         }
+
+        public IActionResult Profilepage()
+        {
+            return View();
+        }
     }
 }
